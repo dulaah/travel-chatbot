@@ -7,6 +7,6 @@
 
 define('GEMINI_API_KEY', 'YOUR_GEMINI_API_KEY_HERE');
 define('GEMINI_MODEL',   'gemini-2.0-flash-lite');
-define('CURL_SSL_VERIFY', false); // set true on live server
+define('CURL_SSL_VERIFY', false); 
 define('APP_NAME',    'Sri Lanka Travel Assistant');
 define('APP_VERSION', '1.0.0');
