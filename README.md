@@ -1,3 +1,5 @@
+Ai Chat Bot To Find Sri Lanka Tour Places 
+
 ## Setup
 1. Copy config.example.php → config.php and add your Gemini API key
 2. Copy db.example.php → db.php and add your database credentials
