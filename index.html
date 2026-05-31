@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sri Lanka Travel Assistant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-icon">🌴</div>
+      <div>
+        <div class="logo-title">Lanka<span>Bot</span></div>
+        <div class="logo-sub">Travel Assistant</div>
+      </div>
+    </div>
+
+    <nav class="quick-links">
+      <p class="nav-label">Quick questions</p>
+      <button class="quick-btn" onclick="sendQuick('What are the best places to visit in Sri Lanka?')">🗺️ Top destinations</button>
+      <button class="quick-btn" onclick="sendQuick('What tour packages do you have?')">🧳 Tour packages</button>
+      <button class="quick-btn" onclick="sendQuick('Do I need a visa to visit Sri Lanka?')">🛂 Visa info</button>
+      <button class="quick-btn" onclick="sendQuick('When is the best time to visit?')">📅 Best time</button>
+      <button class="quick-btn" onclick="sendQuick('How much does a trip to Sri Lanka cost?')">💰 Trip budget</button>
+      <button class="quick-btn" onclick="sendQuick('Tell me about Sigiriya')">🏔️ Sigiriya</button>
+      <button class="quick-btn" onclick="sendQuick('Tell me about Ella')">🚂 Ella</button>
+      <button class="quick-btn" onclick="sendQuick('What is the best beach in Sri Lanka?')">🏖️ Beaches</button>
+      <button class="quick-btn" onclick="sendQuick('Tell me about wildlife in Yala')">🐆 Wildlife</button>
+      <button class="quick-btn" onclick="sendQuick('Show me hotels in Kandy')">🏨 Hotels</button>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="status-dot"></div>
+      <span>AI Assistant online</span>
+    </div>
+  </aside>
+
+  <!-- Main chat area -->
+  <main class="chat-area">
+
+    <header class="chat-header">
+      <div class="bot-avatar">🌺</div>
+      <div>
+        <div class="header-title">Sri Lanka Travel Assistant</div>
+        <div class="header-sub">Ask me anything about your dream trip</div>
+      </div>
+      <button class="clear-btn" onclick="clearChat()" title="Clear chat">🗑️</button>
+    </header>
+
+    <div class="messages" id="messages">
+      <!-- Messages injected by JS -->
+    </div>
+
+    <!-- Learning mode panel (hidden by default) -->
+    <div class="learn-panel" id="learnPanel" style="display:none">
+      <div class="learn-label">📚 Teach me the answer:</div>
+      <div class="learn-row">
+        <input type="text" id="learnInput" placeholder="Type the answer here..." class="learn-input">
+        <button class="learn-submit" onclick="submitLearning()">Teach</button>
+        <button class="learn-skip" onclick="hideLearning()">Skip</button>
+      </div>
+    </div>
+
+    <form class="input-bar" onsubmit="sendMessage(event)">
+      <input type="text" id="userInput" placeholder="Ask about destinations, packages, hotels, visas..." autocomplete="off" required>
+      <button type="submit" id="sendBtn">
+        <span>Send</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+    </form>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

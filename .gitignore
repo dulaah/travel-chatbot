@@ -1,0 +1,20 @@
+# ============================================================
+#  .gitignore — Sri Lanka Travel Chatbot
+#  Files that will NEVER be uploaded to GitHub
+# ============================================================
+
+# Secret files — API keys & database credentials
+config.php
+db.php
+
+# PHP error logs
+*.log
+error_log
+
+# XAMPP / system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Test files — delete before submitting anyway
+test_gemini.php
