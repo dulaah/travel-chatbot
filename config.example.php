@@ -1,9 +1,4 @@
 <?php
-// ============================================================
-//  config.example.php
-//  Copy this file to config.php and fill in your values
-//  NEVER commit config.php — only commit this example file
-// ============================================================
 
 define('GEMINI_API_KEY', 'YOUR_GEMINI_API_KEY_HERE');
 define('GEMINI_MODEL',   'gemini-2.0-flash-lite');
