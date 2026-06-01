@@ -159,7 +159,7 @@ function callGemini(string $userMessage, string $apiKey): array {
     $curlError = curl_error($ch);
     curl_close($ch);
 
-    // cURL network errorww
+    // cURL network error
     if ($curlError) {
         return ['text' => "🔄 Couldn't reach the AI service right now. Please check your internet connection and try again!", 'success' => false];
     }
