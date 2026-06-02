@@ -368,9 +368,7 @@ switch ($intent) {
         break;
 }
 
-// ============================================================
-//  STEP 6 — Log & return
-// ============================================================
+
 try {
     $db->prepare("INSERT INTO chat_logs (session_id, user_message, bot_response, intent) VALUES (?,?,?,?)")
        ->execute([$session, $raw, $reply, $intent]);

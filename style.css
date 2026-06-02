@@ -27,7 +27,6 @@
 
 html, body { height: 100%; font-family: 'DM Sans', sans-serif; background: var(--ivory); color: var(--text-dark); }
 
-/* ── Layout ── */
 .app {
   display: grid;
   grid-template-columns: 260px 1fr;
@@ -37,7 +36,7 @@ html, body { height: 100%; font-family: 'DM Sans', sans-serif; background: var(-
   box-shadow: 0 0 60px rgba(0,0,0,0.12);
 }
 
-/* ── Sidebar ── */
+
 .sidebar {
   background: var(--green-deep);
   display: flex;
